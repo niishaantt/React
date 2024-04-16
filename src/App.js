@@ -14,6 +14,7 @@ import Classprops from './Day2/ClassComponents/Classprops';
 import ClassState from './Day2/ClassComponents/ClassState';
 import LifeCycleMethods from './Day2/ClassComponents/LifeCycleMethods';
 import ProductListComp from './Day2/map/ProductListComp';
+import PHeader from './Day3/ComponentCommunication/PHeader';
 
 function App() {
 
@@ -24,7 +25,7 @@ function App() {
 
     <div>
 
-      <ProductListComp></ProductListComp>
+      <PHeader></PHeader>
 
       {/* <LifeCycleMethods></LifeCycleMethods> */}
 
