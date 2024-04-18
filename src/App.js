@@ -15,42 +15,25 @@ import ClassState from './Day2/ClassComponents/ClassState';
 import LifeCycleMethods from './Day2/ClassComponents/LifeCycleMethods';
 import ProductListComp from './Day2/map/ProductListComp';
 import PHeader from './Day3/ComponentCommunication/PHeader';
+import ProductListComp1 from './Day3/ComponentCommunication/Products/ProductListComp';
+import { useState } from 'react';
+import HeaderComp from './Day3/ComponentCommunication/LiftingStateUp/HeaderComp';
+import LoginComp from './Day3/ComponentCommunication/LiftingStateUp/LoginComp';
+import ControlledComp from './Day3/ComponentCommunication/Controlled_Uncontrolled/ControlledComp';
+
 
 function App() {
+
+  let [username, setUserName] = useState("")
 
   var name = "Persistent"
 
   var user = {userName:"Nishant", userId:"5678", city:"Mumbai Sub", address:"abcdef"}
   return (
 
-    <div>
-
-      <PHeader></PHeader>
-
-      {/* <LifeCycleMethods></LifeCycleMethods> */}
-
-      {/* <ClassState></ClassState> */}
-
-      {/* <Classprops fname="Nishant" lname="Yadav" city="Pune"></Classprops> */}
-
-      {/* <UseEffectExample></UseEffectExample> */}
-    {/* <MessageComponent></MessageComponent>
-    <MessageComponent></MessageComponent>
-    <MessageComponent ></MessageComponent> */}
-    </div>
-    
-
-    //<Profilecomp1 user={user}></Profilecomp1>
-
-    //<ProfileComp userName="Nishant"  userId="1234" city="Mumbai" address= "abc"></ProfileComp>
-
-    //<BootstrapStyling></BootstrapStyling>
-    //<StyleComp></StyleComp>
-    // <div>
-    //   <h1>Welcome to {name}</h1>
-    //     {/*<HelloWorldFunction></HelloWorldFunction>
-    //     <HelloWorldClass></HelloWorldClass>*/}
-    // </div>
+    <>
+    <ControlledComp></ControlledComp>
+    </>
   );
 }
 
