@@ -20,6 +20,9 @@ import { useState } from 'react';
 import HeaderComp from './Day3/ComponentCommunication/LiftingStateUp/HeaderComp';
 import LoginComp from './Day3/ComponentCommunication/LiftingStateUp/LoginComp';
 import ControlledComp from './Day3/ComponentCommunication/Controlled_Uncontrolled/ControlledComp';
+import SimpleRouting from './Day3/ComponentCommunication/Routing/simpleRouting';
+import { BrowserRouter } from 'react-router-dom';
+import HeaderComp1 from './Day3/ComponentCommunication/Routing/EmployeeRouting/HeaderComp';
 
 
 function App() {
@@ -32,7 +35,14 @@ function App() {
   return (
 
     <>
-    <ControlledComp></ControlledComp>
+    <BrowserRouter>
+
+    <HeaderComp1></HeaderComp1>
+
+
+    {/* <SimpleRouting></SimpleRouting> */}
+    </BrowserRouter>
+    
     </>
   );
 }
